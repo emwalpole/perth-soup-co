@@ -45,7 +45,6 @@
   "dependencies": {
     "@floating-ui/dom": "1.6.12",
     "@sveltejs/adapter-cloudflare": "^4.7.4",
-    "svelte-check": "^4.0.9",
     "svelte-i18n": "^4.0.1"
   }
 }
