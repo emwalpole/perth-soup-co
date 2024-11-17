@@ -2,8 +2,8 @@
   "name": "perth-soup-co",
   "version": "0.0.1",
   "private": true,
-  "overrides": {
-    "picomatch": "4.0.2"
+  "resolutions": {
+    "picomatch": "^4.0.2"
   },
   "scripts": {
     "dev": "vite dev",
@@ -33,6 +33,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.36.0",
     "globals": "^15.0.0",
+    "npm-force-resolutions": "^0.0.10",
     "picomatch": "^4.0.2",
     "postcss": "8.4.47",
     "prettier": "^3.1.1",
