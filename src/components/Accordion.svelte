@@ -9,6 +9,6 @@
 <details class="p-2 rounded-lg bg-surface-500 text-white dark:bg-white dark:text-black">
   <summary>{ title }</summary>
   {#each paragraphs as paragraph, index}
-      <p class="p-3 px-12">{ $t(paragraph) }</p>
+      <p class="p-3 px-8">{ $t(paragraph) }</p>
   {/each}
 </details>
