@@ -9,7 +9,6 @@
 
 	import { theme } from '../stores/theme';
 	import { language } from '../stores/lang';
-	import { onMount } from 'svelte';
 	import { t, locale } from 'svelte-i18n';
   	import '../i18n';
 
