@@ -10,6 +10,6 @@
 <!-- Iterate over the items array and render each item -->
 <span class="flex flex-nowrap">
     {#each icons as icon}
-        <img class="ml-4" src="{icon.src}" alt="{$t(icon.alt)}" width="65px"/>
+        <img class="first:ml-0 ml-4" src="{icon.src}" alt="{$t(icon.alt)}" width="65px"/>
     {/each}
 </span>

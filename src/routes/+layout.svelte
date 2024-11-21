@@ -7,7 +7,8 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
-	import { theme, language } from '../stores/theme';
+	import { theme } from '../stores/theme';
+	import { language } from '../stores/lang';
 	import { onMount } from 'svelte';
 	import { t, locale } from 'svelte-i18n';
   	import '../i18n';
@@ -19,11 +20,6 @@
 			document.documentElement.lang = String($language);
 		}
 	}
-
-	// Apply the theme when the component mounts
-	onMount(() => {	
-		changeLanguage(String($language));
-	});
 
 	// Function to change language
 	const changeLanguage = (newLang: string) => {

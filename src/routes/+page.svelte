@@ -57,7 +57,7 @@
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-3 font-extrabold">{$t("wholesale_header")}</h2>
-			<p>{$t("wholesale_info")}:</p>
+			<p>{$t("wholesale_info")}</p>
 			<p class="font-heading pt-4 pb-2 font-extrabold text-[24px]">{$t("wholesale_enquiries")}:</p>
 			<p class="font-extrabold">wholesale@perthsoup.ca</p>
 		</section>
