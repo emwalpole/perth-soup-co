@@ -13,6 +13,8 @@
     "test:unit": "vitest"
   },
   "devDependencies": {
+    "@inlang/paraglide-js": "1.11.3",
+    "@inlang/paraglide-sveltekit": "^0.12.1",
     "@playwright/test": "^1.28.1",
     "@skeletonlabs/skeleton": "2.10.3",
     "@skeletonlabs/tw-plugin": "0.4.0",
@@ -43,6 +45,7 @@
   "dependencies": {
     "@floating-ui/dom": "1.6.12",
     "@sveltejs/adapter-cloudflare": "^4.7.4",
-    "svelte-i18n": "^4.0.1"
+    "node": "^20.18.1",
+    "npm": "^10.9.1"
   }
 }

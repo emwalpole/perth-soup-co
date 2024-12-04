@@ -88,16 +88,15 @@ export const perthSoupCoTheme: CustomThemeConfig = {
 		"--color-error-800": "75 31 43", // #4b1f2b
 		"--color-error-900": "61 25 35", // #3d1923
 		// surface | #231F20 
-		"--color-surface-50": "222 221 222", // #deddde
-		"--color-surface-100": "211 210 210", // #d3d2d2
+		"--color-surface-50": "255 255 255", // #deddde
+		"--color-surface-100": "255 255 255", // #d3d2d2
 		"--color-surface-200": "200 199 199", // #c8c7c7
 		"--color-surface-300": "167 165 166", // #a7a5a6
 		"--color-surface-400": "101 98 99", // #656263
 		"--color-surface-500": "35 31 32", // #231F20
 		"--color-surface-600": "32 28 29", // #201c1d
 		"--color-surface-700": "26 23 24", // #1a1718
-		"--color-surface-800": "21 19 19", // #151313
-		"--color-surface-900": "17 15 16", // #110f10
-		
+		"--color-surface-800": "0 0 0", // #151313
+		"--color-surface-900": "0 0 0", // #110f10
 	}
 }

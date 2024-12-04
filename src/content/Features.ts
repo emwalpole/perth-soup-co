@@ -1,14 +1,15 @@
+import * as m from '$lib/paraglide/messages.js';
 export const FeaturedText = [
-    { name:"features_00"},
-    { name:"features_01"},
-    { name:"features_02"},
-    { name:"features_03"},
-    { name:"features_04"},
+    { name:m.features_00()},
+    { name: m.features_01()},
+    { name: m.features_02()},
+    { name: m.features_03()},
+    { name: m.features_04()},
 ]
 
 export const FeaturedIcons = [
-    { src:"/assets/ontariomade.png", alt: "features_04"},
-    { src:"/assets/ingredients/Ingredients_NoNuts.svg", alt: "ingredients_06"},
-    { src:"/assets/ingredients/Ingredients_NoMSG.svg", alt: "ingredients_02"},
-    { src:"/assets/ingredients/Ingredients_AllNatural.svg", alt: "ingredients_00"}
+    { src:"/assets/ontariomade.png", alt: m.features_04()},
+    { src:"/assets/ingredients/Ingredients_NoNuts.svg", alt: m.ingredients_06()},
+    { src:"/assets/ingredients/Ingredients_NoMSG.svg", alt: m.ingredients_02()},
+    { src:"/assets/ingredients/Ingredients_AllNatural.svg", alt: m.ingredients_00()}
 ]

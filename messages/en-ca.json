@@ -1,6 +1,5 @@
 {
-    "english_button": "En",
-    "french_button": "Fr",
+    "$schema": "https://inlang.com/schema/inlang-message-format",
     "about_section_00_title": "Our Mission, Values, Expertise",
     "about_section_00_p_01": "At Perth Soup Company, we are dedicated to making delicious, healthy and balanced, locally-grown meals easy for you to enjoy. Our selection of entrées, soups, chili, and dry mixes are made in small batches with the utmost care. We use purified water, stainless steel and ceramic cookware, and the best ingredients available.",
     "about_section_00_p_02": "We source our ingredients close to home and use only Ontario-raised chicken, locally-raised ground beef, and AAA Alberta stewing beef. We strive to use seasonal Ontario vegetables for maximum freshness. We believe supporting Ontario agriculture promotes food resiliency and benefits everyone.",
@@ -65,6 +64,5 @@
     "mavericks_title": "BONUS",
     "mavericks_description": "We sell Maverick's Coffee & Donuts",
     "mavericks_note": "Special orders welcome",
-    "perth_soup_logo_alt": "Perth Soup Logo, soup ladle"
+    "perth_soup_logo_alt": "Perth Soup Logo, soup ladle"    
 }
-    
