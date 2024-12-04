@@ -18,7 +18,10 @@ const config = {
 		adapter: adapter({
 			pages: 'docs', // The directory for HTML files
 			assets: 'docs', // The directory for static assets
-			fallback: null      // Optional: SPA fallback file
+			fallback: null ,     // Optional: SPA fallback file
+			paths: {
+				base: '/perth-soup-co', // Replace 'my-repo' with your repository name
+			  },
 		  })
 	}
 };
