@@ -8,8 +8,8 @@ export const FeaturedText = [
 ]
 
 export const FeaturedIcons = [
-    { src:"/assets/ontariomade.png", alt: m.features_04()},
-    { src:"/assets/ingredients/Ingredients_NoNuts.svg", alt: m.ingredients_06()},
-    { src:"/assets/ingredients/Ingredients_NoMSG.svg", alt: m.ingredients_02()},
-    { src:"/assets/ingredients/Ingredients_AllNatural.svg", alt: m.ingredients_00()}
+    { src:"%sveltekit.assets%/ontariomade.png", alt: m.features_04()},
+    { src:"%sveltekit.assets%/ingredients/Ingredients_NoNuts.svg", alt: m.ingredients_06()},
+    { src:"%sveltekit.assets%/ingredients/Ingredients_NoMSG.svg", alt: m.ingredients_02()},
+    { src:"%sveltekit.assets%/ingredients/Ingredients_AllNatural.svg", alt: m.ingredients_00()}
 ]
