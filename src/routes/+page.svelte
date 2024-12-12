@@ -3,8 +3,8 @@
 <div class="container w-[80%] max-w-[500px] h-full mx-auto flex justify-center items-center">
 	<div class="space-y-8 text-center flex flex-col items-center">
 		<section class="w-screen pt-3">
-			<img src="%sveltekit.assets%/PerthSoupCMYK.png" class="dark:hidden pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
-			<img src="%sveltekit.assets%/PerthSoupBW.png" class="hidden dark:block dark:invert pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
+			<img src="assets/PerthSoupCMYK.png" class="dark:hidden pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
+			<img src="assets/PerthSoupBW.png" class="hidden dark:block dark:invert pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
 			<h1 class="visually-hidden">Perth Soup Company</h1>
 			<p class="font-heading font-semibold text-[36px] pb-3">{m.header_00()}!</p>
 			<p class="font-heading text-[24px]">{m.header_01()}</p>
@@ -28,7 +28,7 @@
 
 		<section class="flex w-screen p-6 justify-center bg-success-500 text-white">
 			<Callout>
-				<img slot="image" src="%sveltekit.assets%/mavericks-logo.png" width="100%" alt="{m.mavericks_logo_alt()}" />
+				<img slot="image" src="/assets/mavericks-logo.png" width="100%" alt="{m.mavericks_logo_alt()}" />
 				<p class="w-full font-extrabold text-xl" slot="title">{m.mavericks_title()}!</p>
 				<p class="w-full" slot="description">{m.mavericks_description()}</p>
 				<p class="w-full font-bold" slot="note">{m.mavericks_note()}</p>
@@ -110,7 +110,7 @@
 		border: 0;
 	}
 	.checkered {
-		background-image: url('%sveltekit.assets%/check.png');
+		background-image: url('/assets/check.png');
 		background-repeat: repeat;
 		background-size: 350px 350px;
 	}
