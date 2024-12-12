@@ -28,7 +28,7 @@
 
 		<section class="flex w-screen p-6 justify-center bg-success-500 text-white">
 			<Callout>
-				<img slot="image" src="/assets/mavericks-logo.png" width="100%" alt="{m.mavericks_logo_alt()}" />
+				<img slot="image" src="assets/mavericks-logo.png" width="100%" alt="{m.mavericks_logo_alt()}" />
 				<p class="w-full font-extrabold text-xl" slot="title">{m.mavericks_title()}!</p>
 				<p class="w-full" slot="description">{m.mavericks_description()}</p>
 				<p class="w-full font-bold" slot="note">{m.mavericks_note()}</p>
@@ -110,7 +110,7 @@
 		border: 0;
 	}
 	.checkered {
-		background-image: url('/assets/check.png');
+		background-image: url('assets/check.png');
 		background-repeat: repeat;
 		background-size: 350px 350px;
 	}
