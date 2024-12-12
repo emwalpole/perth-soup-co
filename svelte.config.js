@@ -17,13 +17,19 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
 			pages: 'docs', // The directory for HTML files
-			fallback: 'index.html' ,     // Optional: SPA fallback file
+			fallback: 'en.html' ,     // Optional: SPA fallback file
 			precompress: false,
 			strict: true,
-			paths: {
-				base: '/perth-soup-co', // Replace 'my-repo' with your repository name
-			  },
-		  })
+		}),
+		paths: {
+			base: '/perth-soup-co', // Replace 'my-repo' with your repository name
+		},
+		plugins: [ 
+			paraglide({ 
+				locales: ['en', 'fr'],
+				defaultLocale: 'en',
+			})
+		], 
 	}
 };
 export default config;
