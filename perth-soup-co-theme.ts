@@ -98,6 +98,5 @@ export const perthSoupCoTheme: CustomThemeConfig = {
 		"--color-surface-700": "26 23 24", // #1a1718
 		"--color-surface-800": "0 0 0", // #151313
 		"--color-surface-900": "0 0 0", // #110f10
-		
 	}
 }
