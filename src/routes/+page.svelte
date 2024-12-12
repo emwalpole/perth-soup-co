@@ -110,7 +110,7 @@
 		border: 0;
 	}
 	.checkered {
-		background-image: url('assets/check.png');
+		background-image: url('/assets/check.png');
 		background-repeat: repeat;
 		background-size: 350px 350px;
 	}

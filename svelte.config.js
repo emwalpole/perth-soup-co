@@ -24,12 +24,12 @@ const config = {
 		paths: {
 			base: '/perth-soup-co', // Replace 'my-repo' with your repository name
 		},
-		plugins: [ 
-			paraglide({ 
-				locales: ['en', 'fr'],
-				defaultLocale: 'en',
-			})
-		], 
+		// plugins: [ 
+		// 	paraglide({ 
+		// 		locales: ['en', 'fr'],
+		// 		defaultLocale: 'en',
+		// 	})
+		// ], 
 	}
 };
 export default config;
