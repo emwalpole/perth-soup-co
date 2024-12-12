@@ -88,8 +88,8 @@ export const perthSoupCoTheme: CustomThemeConfig = {
 		"--color-error-800": "75 31 43", // #4b1f2b
 		"--color-error-900": "61 25 35", // #3d1923
 		// surface | #231F20 
-		"--color-surface-50": "255 255 255", // #deddde
-		"--color-surface-100": "255 255 255", // #d3d2d2
+		"--color-surface-50": "242 242 233", // #f2f2e9
+		"--color-surface-100": "242 242 233", // #f3f2d8
 		"--color-surface-200": "200 199 199", // #c8c7c7
 		"--color-surface-300": "167 165 166", // #a7a5a6
 		"--color-surface-400": "101 98 99", // #656263

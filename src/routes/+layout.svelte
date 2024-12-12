@@ -25,8 +25,6 @@
 		}
 	}
 
-	console.log(i18n);
-
 	// Toggle theme function
 	const toggleTheme = (event: Event) => {
 		const newTheme = (event.target as HTMLInputElement).checked ? 'dark' : 'light';
