@@ -14,6 +14,9 @@ export default {
 				base: 'var(--theme-font-family-base)', // Base font
 				heading: 'var(--theme-font-family-heading)', // Heading font
 			},
+			colors: {
+				ribbon: '#ffcb05',
+			}
 		},
 	},
 	plugins: [
@@ -25,6 +28,5 @@ export default {
 					perthSoupCoTheme
 				],
 			},
-		}),
-	],
+		}),	],
 } satisfies Config;

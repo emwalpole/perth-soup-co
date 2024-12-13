@@ -2,21 +2,22 @@
 
 <div class="container w-[80%] max-w-[500px] h-full mx-auto flex justify-center items-center">
 	<div class="space-y-8 text-center flex flex-col items-center">
-		<section class="w-screen pt-3">
-			<img src="assets/PerthSoupCMYK.png" class="dark:hidden pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
-			<img src="assets/PerthSoupBW.png" class="hidden dark:block dark:invert pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
+		<section class="w-screen pt-3 checkered">
+			<span class="flex justify-start flex-nowrap text-lg ml-3"><a href="./fr-ca">FR</a>&nbsp;|&nbsp;<a href="./">EN</a></span>
+			<!-- <img src="assets/PerthSoupCMYK.png" class="dark:hidden pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/> -->
+			<!-- <img src="assets/PerthSoupBW.png" class="hidden dark:block dark:invert pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/> -->
+			<img src="assets/PerthSoupBW.png" class="pb-6 pt-6 w-screen max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
 			<h1 class="visually-hidden">Perth Soup Company</h1>
-			<p class="font-heading font-semibold text-[36px] pb-3">{m.header_00()}!</p>
-			<p class="font-heading text-[24px]">{m.header_01()}</p>
-			<p class="p-3 font-extrabold">{m.header_02()}.</p>
-			<p class="flex p-3 justify-center bg-surface-500 text-white dark:bg-white dark:text-black">
-				<span class="max-w-[350px]"><ListRow items={ FeaturedText } /></span>
-			</p>
-			<p class="flex p-3 justify-center bg-tertiary-500 text-black checkered">
-				<span class="max-w-[345px]"><IconRow icons={ FeaturedIcons } /></span>
-			</p>
+			<section class="flex w-screen justify-center p-6 pt-3">
+				<div class="flex flex-col justify-center bg-surface-100 border-4 border-black rounded-2xl max-w-[345px]">
+					<p class="font-heading font-semibold text-[36px] pb-3 pt-3">{m.header_00()}!</p>
+					<p class="font-heading text-[24px]">{m.header_01()}</p>
+					<div class="font-heading font-semibold text-[20px] -ml-[13.5px] -mr-[13.5px] mt-3 mb-0 pb-0 ribbon">Ready to eat in 20 mins</div>
+					<span class="flex flex-col justify-center p-3 pt-0"><ListRow items={ FeaturedText } /></span>
+				</div>	
+			</section>
+			<span class="flex justify-center text-black p-3 bg-primary-500"><IconRow icons={ FeaturedIcons } /></span>
 		</section>
-
 		<section class="space-y-2 w-[80%] max-w-[650px]">
 			<p class="font-extrabold text-lg">{m.location()}</p>
 			<h2 class="font-extrabold">{m.location_header()}:</h2>
@@ -191,5 +192,23 @@
 		background-image: url('/assets/check.png');
 		background-repeat: repeat;
 		background-size: 350px 350px;
+	}
+	/* HTML: <div class="ribbon">Your text content</div> */
+	.ribbon {
+	--r: .5em; /* control the ribbon shape (the radius) */
+
+	position: relative;
+	bottom: 20px;
+	/* inset-inline: calc(-1*var(--r)); */
+	text-align: center;
+	line-height: 1.8; 
+	padding: calc(2*var(--r)) .5em 0;
+	border-radius: var(--r);
+	--_g:0/var(--r) calc(2*var(--r)) no-repeat;
+	background: 
+		radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+		radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+		conic-gradient(at var(--r) calc(2*var(--r)),#0000 25%, theme('colors.ribbon') 0)
+		0 0/calc(100% - var(--r)) 100%;
 	}
 </style>
