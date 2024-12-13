@@ -45,14 +45,14 @@
 				<svelte:fragment slot="trail">
 					<!-- Theme toggle switch -->
 					<label class="inline-flex items-center cursor-pointer">
-						<input
+						<!-- <input
 							type="checkbox"
 							class="sr-only peer"
 							on:change="{toggleTheme}"
 							aria-label="Toggle theme"
 						/>
 						<div class="relative w-11 h-6 bg-surface-500 rounded-full peer peer-focus:ring-2 peer-focus:ring-surface-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-tertiary-500"></div>
-						<span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+						<span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span> -->
 						<a href="./fr-ca">FR</a>&nbsp;|&nbsp;<a href="./">EN</a>
 					</label>
 				</svelte:fragment>
