@@ -7,7 +7,7 @@
 </script>
   
 <!-- HTML structure -->
-<details class="p-2 rounded-lg bg-surface-500 text-white dark:bg-white dark:text-black">
+<details class="p-2 rounded-lg bg-surface-500 text-white">
   <summary>{ title }</summary>
   {#each paragraphs as paragraph}
       <p class="p-3 px-8 text-left">{ paragraph }</p>

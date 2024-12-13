@@ -4,15 +4,13 @@
 	<div class="space-y-8 text-center flex flex-col items-center">
 		<section class="w-screen pt-3 checkered">
 			<span class="flex justify-start flex-nowrap text-lg ml-3"><a href="./fr-ca">FR</a>&nbsp;|&nbsp;<a href="./">EN</a></span>
-			<!-- <img src="assets/PerthSoupCMYK.png" class="dark:hidden pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/> -->
-			<!-- <img src="assets/PerthSoupBW.png" class="hidden dark:block dark:invert pb-6 max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/> -->
 			<img src="assets/PerthSoupBW.png" class="pb-6 pt-6 w-screen max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
 			<h1 class="visually-hidden">Perth Soup Company</h1>
 			<section class="flex w-screen justify-center p-6 pt-3">
 				<div class="flex flex-col justify-center bg-surface-100 border-4 border-black rounded-2xl max-w-[345px]">
 					<p class="font-heading font-semibold text-[36px] pb-3 pt-3">{m.header_00()}!</p>
 					<p class="font-heading text-[24px]">{m.header_01()}</p>
-					<div class="font-heading font-semibold text-[20px] -ml-[13.5px] -mr-[13.5px] mt-3 mb-0 pb-0 ribbon">Ready to eat in 20 mins</div>
+					<div class="font-heading font-semibold text-[20px] -ml-[13.5px] -mr-[13.5px] mt-3 mb-0 pb-0 ribbon">{m.header_02()}</div>
 					<span class="flex flex-col justify-center p-3 pt-0"><ListRow items={ FeaturedText } /></span>
 				</div>	
 			</section>
@@ -38,14 +36,14 @@
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">{m.shopping_header()}:</h2>
-			<div class="flex p-6 rounded-lg justify-center bg-surface-500 text-white dark:bg-white dark:text-black">
+			<div class="flex p-6 rounded-lg justify-center bg-surface-500 text-white">
 				<ListBlock items={ Locations } type={ 'Locations' } />
 			</div>
 		</section>
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">{m.soups_header()}:</h2>
-			<div class="flex p-6 rounded-lg justify-center bg-surface-500 text-white dark:bg-white dark:text-black">
+			<div class="flex p-6 rounded-lg justify-center bg-surface-500 text-white">
 				<ListBlock items={ Soups } type={ 'Soups' } />
 			</div>
 		</section>
@@ -115,7 +113,7 @@
 	const Ingredients = [
 		{ name: m.ingredients_00(), icon:"assets/ingredients/Ingredients_AllNatural.svg" },
 		{ name: m.ingredients_01(), icon:"assets/ingredients/Ingredients_NoGluten.svg" },
-		{ name: m.ingredients_02(), icon:"assets/ingredients/Ingredients_NoMSG.png" },
+		{ name: m.ingredients_02(), icon:"assets/ingredients/Ingredients_NoMSG.svg" },
 		{ name: m.ingredients_03(), icon:"assets/ingredients/Ingredients_NoGMO.svg" },
 		{ name: m.ingredients_04(), icon:"assets/ingredients/Ingredients_Vegan.svg" },
 		{ name: m.ingredients_05(), icon:"assets/ingredients/Ingredients_NoSoy.svg" },
