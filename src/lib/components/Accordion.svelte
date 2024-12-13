@@ -1,7 +1,9 @@
-<!-- src/components/Accordion.svelte -->
+<!-- src/lib/components/Accordion.svelte -->
 <script lang="ts">
     export let title: string;
     export let paragraphs: Array<String> = [];
+    import { getContext } from 'svelte';
+    const i18n = getContext('i18n');
 </script>
   
 <!-- HTML structure -->

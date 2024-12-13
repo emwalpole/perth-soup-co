@@ -1,4 +1,4 @@
-<!-- src/components/ListRow.svelte -->
+<!-- src/lib/components/ListRow.svelte -->
 <script lang="ts">
     // Declare any props that the component might accept
     export let items: Array<Object> | Array<String> = [];

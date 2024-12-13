@@ -81,20 +81,98 @@
 </div>
 
 <script lang="ts">
-	import ListBlock from "../components/ListBlock.svelte";
-	import ListRow from "../components/ListRow.svelte";
-	import IconRow from "../components/IconRow.svelte";
-	import Accordion from "../components/Accordion.svelte";
-	import Callout from "../components/Callout.svelte";
-	import { Locations } from "../content/Locations";
-	import { FeaturedText, FeaturedIcons } from "../content/Features";
-	import { Soups } from "../content/Soups";
-	import { Ingredients } from "../content/Ingredients";
-	import { About } from "../content/About";
+	import ListBlock from "$lib/components/ListBlock.svelte";
+	import ListRow from "$lib/components/ListRow.svelte";
+	import IconRow from "$lib/components/IconRow.svelte";
+	import Accordion from "$lib/components/Accordion.svelte";
+	import Callout from "$lib/components/Callout.svelte";
 
 	import * as m from '$lib/paraglide/messages.js'
 
 	const year = String(new Date().getFullYear());
+
+	const Soups = [
+		{ name:m.soups_00()},
+		{ name:m.soups_01()},
+		{ name:m.soups_02()},
+		{ name:m.soups_03()},
+		{ name:m.soups_04()},
+		{ name:m.soups_05()},
+		{ name:m.soups_06()},
+		{ name:m.soups_07()},
+		{ name:m.soups_08()},
+		{ name:m.soups_09()},
+	]
+	const Locations = [
+    {  name: "Metro", city: "Perth" },
+    {  name: "Glenburnies", city: "Kingston" },
+    {  name: "Kudrinko's", city: "Westport" },
+    {  name: "B & H Community Grocer", city: "Kemptville" },
+    {  name: "Valley Custom Cutting", city: "Smiths Falls" },
+    {  name: "Rideau Ferry Store", city: "Rideau Ferry" },
+	]
+	const Ingredients = [
+		{ name: m.ingredients_00(), icon:"assets/ingredients/Ingredients_AllNatural.svg" },
+		{ name: m.ingredients_01(), icon:"assets/ingredients/Ingredients_NoGluten.svg" },
+		{ name: m.ingredients_02(), icon:"assets/ingredients/Ingredients_NoMSG.png" },
+		{ name: m.ingredients_03(), icon:"assets/ingredients/Ingredients_NoGMO.svg" },
+		{ name: m.ingredients_04(), icon:"assets/ingredients/Ingredients_Vegan.svg" },
+		{ name: m.ingredients_05(), icon:"assets/ingredients/Ingredients_NoSoy.svg" },
+		{ name: m.ingredients_06(), icon:"assets/ingredients/Ingredients_NoNuts.svg" },
+	]
+	const FeaturedText = [
+		{ name:m.features_00()},
+		{ name: m.features_01()},
+		{ name: m.features_02()},
+		{ name: m.features_03()},
+		{ name: m.features_04()},
+	]
+	const FeaturedIcons = [
+		{ src:"assets/ontariomade.png", alt: m.features_04()},
+		{ src:"assets/ingredients/Ingredients_NoNuts.svg", alt: m.ingredients_06()},
+		{ src:"assets/ingredients/Ingredients_NoMSG.svg", alt: m.ingredients_02()},
+		{ src:"assets/ingredients/Ingredients_AllNatural.svg", alt: m.ingredients_00()}
+	]
+	const About = [
+    { 
+        title: m.about_section_00_title(),
+        text: [ 
+            m.about_section_00_p_01(),
+            m.about_section_00_p_02(),
+            m.about_section_00_p_03(),
+        ]
+    },
+    { 
+        title: m.about_section_01_title(),
+        text: [ 
+           m.about_section_01_p_01(),
+           m.about_section_01_p_02(),
+           m.about_section_01_p_03(),
+           m.about_section_01_p_04(),
+           m.about_section_01_p_05(),
+        ]
+    }
+		// { 
+		//     title: "about_section_02_title",
+		//     image: "",
+		//     text: [ 
+		//         "about_section_02_p_01",
+		//         "about_section_02_p_02",
+		//         "about_section_02_p_03",
+		//         "about_section_02_p_04",
+		//     ]
+		// },
+		// { 
+		//     title: "about_section_03_title",
+		//     text: [ 
+		//         "about_section_03_p_01",
+		//         "about_section_03_p_02",
+		//         "about_section_03_p_03",
+		//         "about_section_03_p_04",
+		//     ]
+		// },
+
+	]
 </script>
 
 <style lang="postcss">

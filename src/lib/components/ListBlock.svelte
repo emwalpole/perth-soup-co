@@ -1,4 +1,4 @@
-<!-- src/components/ListBlock.svelte -->
+<!-- src/lib/components/ListBlock.svelte -->
 <script lang="ts">
   export let items: Array<Object> | Array<String> = [];
   export let type: string;

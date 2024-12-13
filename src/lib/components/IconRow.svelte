@@ -1,4 +1,4 @@
-<!-- src/components/IconRow.svelte -->
+<!-- src/lib/components/IconRow.svelte -->
 <script lang="ts">
     // Declare any props that the component might accept
     export let icons: Array<Object> = [];
