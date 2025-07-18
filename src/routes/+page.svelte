@@ -1,57 +1,160 @@
+<script lang="ts">
+	import ListBlock from '$lib/components/ListBlock.svelte';
+	import ListRow from '$lib/components/ListRow.svelte';
+	import IconRow from '$lib/components/IconRow.svelte';
+	import Accordion from '$lib/components/Accordion.svelte';
+	import Callout from '$lib/components/Callout.svelte';
+
+	import * as m from '$lib/paraglide/messages.js';
+
+	const year = String(new Date().getFullYear());
+
+	const Soups_Vegan_Gluten_Free = [
+		{ name: m.soups_vegan_gluten_free_00() },
+		{ name: m.soups_vegan_gluten_free_01() },
+		{ name: m.soups_vegan_gluten_free_02() },
+		{ name: m.soups_vegan_gluten_free_03() },
+		{ name: m.soups_vegan_gluten_free_04() },
+		{ name: m.soups_vegan_gluten_free_05() },
+		{ name: m.soups_vegan_gluten_free_06() },
+		{ name: m.soups_vegan_gluten_free_07() },
+		{ name: m.soups_vegan_gluten_free_08() }
+	];
+
+	const Soups_Non_Vegan_Gluten = [
+		{ name: m.soups_non_vegan_gluten_00() },
+		{ name: m.soups_non_vegan_gluten_01() },
+		{ name: m.soups_non_vegan_gluten_02() },
+		{ name: m.soups_non_vegan_gluten_03() },
+		{ name: m.soups_non_vegan_gluten_04() }
+	];
+
+	const Frozen_Meals = [
+		{ name: m.frozen_meals_00() },
+		{ name: m.frozen_meals_01() },
+		{ name: m.frozen_meals_02() },
+		{ name: m.frozen_meals_03() }
+	];
+
+	const Locations = [
+		{ name: 'Glenburnies', city: 'Kingston' },
+		{ name: "Kudrinko's", city: 'Westport' },
+		{ name: 'B & H Community Grocer', city: 'Kemptville' },
+		{ name: 'Valley Custom Cutting', city: 'Smiths Falls' }
+	];
+	const Ingredients = [
+		{ name: m.ingredients_00(), icon: 'assets/ingredients/Ingredients_AllNatural.svg' },
+		{ name: m.ingredients_01(), icon: 'assets/ingredients/Ingredients_NoGluten.svg' },
+		{ name: m.ingredients_02(), icon: 'assets/ingredients/Ingredients_NoMSG.svg' },
+		{ name: m.ingredients_03(), icon: 'assets/ingredients/Ingredients_NoGMO.svg' },
+		{ name: m.ingredients_04(), icon: 'assets/ingredients/Ingredients_Vegan.svg' },
+		{ name: m.ingredients_05(), icon: 'assets/ingredients/Ingredients_NoSoy.svg' },
+		{ name: m.ingredients_06(), icon: 'assets/ingredients/Ingredients_NoNuts.svg' }
+	];
+	const FeaturedText = [
+		{ name: m.features_00() },
+		{ name: m.features_01() },
+		{ name: m.features_02() },
+		{ name: m.features_03() },
+		{ name: m.features_04() }
+	];
+	const FeaturedIcons = [
+		{ src: 'assets/ontariomade.png', alt: m.features_04() },
+		{ src: 'assets/ingredients/Ingredients_NoNuts.svg', alt: m.ingredients_06() },
+		{ src: 'assets/ingredients/Ingredients_NoMSG.svg', alt: m.ingredients_02() },
+		{ src: 'assets/ingredients/Ingredients_AllNatural.svg', alt: m.ingredients_00() }
+	];
+	const About = {
+		title: m.about_section_00_title(),
+		text: [m.about_section_00_p_01(), m.about_section_00_p_02(), m.about_section_00_p_03()]
+	};
+</script>
+
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
 <div class="container w-[80%] max-w-[500px] h-full mx-auto flex justify-center items-center">
 	<div class="space-y-8 text-center flex flex-col items-center">
 		<section class="w-screen pt-3 checkered">
-			<span class="flex justify-start flex-nowrap text-lg ml-3"><a href="./fr-ca">FR</a>&nbsp;|&nbsp;<a href="./">EN</a></span>
-			<img src="assets/PerthSoupBW.png" class="pb-6 pt-6 w-screen max-w-[300px] mx-auto" alt={m.perth_soup_logo_alt()}/>
+			<span class="flex justify-start flex-nowrap text-lg ml-3"
+				><a href="./fr-ca">FR</a>&nbsp;|&nbsp;<a href="./">EN</a></span
+			>
+			<img
+				src="assets/PerthSoupBW.png"
+				class="pb-6 pt-6 w-screen max-w-[300px] mx-auto"
+				alt={m.perth_soup_logo_alt()}
+			/>
 			<h1 class="visually-hidden">Perth Soup Company</h1>
 			<section class="flex w-screen justify-center p-6 pt-3">
-				<div class="flex flex-col justify-center bg-surface-100 border-4 border-black rounded-2xl max-w-[345px]">
+				<div
+					class="flex flex-col justify-center bg-surface-100 border-4 border-black rounded-2xl max-w-[345px]"
+				>
 					<p class="font-heading font-semibold text-[36px] pb-3 pt-3">{m.header_00()}!</p>
 					<p class="font-heading text-[24px]">{m.header_01()}</p>
-					<div class="font-heading font-semibold text-[20px] -ml-[13.5px] -mr-[13.5px] mt-3 mb-0 pb-0 ribbon">{m.header_02()}</div>
-					<span class="flex flex-col justify-center p-3 pt-0"><ListRow items={ FeaturedText } /></span>
-				</div>	
+					<div
+						class="font-heading font-semibold text-[20px] -ml-[13.5px] -mr-[13.5px] mt-3 mb-0 pb-0 ribbon"
+					>
+						{m.header_02()}
+					</div>
+					<span class="flex flex-col justify-center p-3 pt-0"><ListRow items={FeaturedText} /></span
+					>
+				</div>
 			</section>
-			<span class="flex justify-center text-black p-3 bg-primary-500"><IconRow icons={ FeaturedIcons } /></span>
+			<span class="flex justify-center text-black p-3 bg-primary-500"
+				><IconRow icons={FeaturedIcons} /></span
+			>
 		</section>
-		<section class="space-y-2 w-[80%] max-w-[650px]">
+		<section class="space-y-2 w-[80%] max-w-[650px] border border-black rounded-lg bg-transparent p-4">
 			<p class="font-extrabold text-lg">{m.location()}</p>
-			<h2 class="font-extrabold">{m.location_header()}:</h2>
-			<span>{m.hours_00()}<br/>
-				{m.hours_01()}<br/>
-				{m.hours_02()}<br/></span>
-			<p class="font-heading font-extrabold text-[24px]">{m.contact_info()}</p>
+		  
+			<h2 class="font-extrabold">{m.location_header_00()}:</h2>
+			<span>
+			  {m.hours_location_00()}<br />
+			</span>
+		  
+			<h2 class="font-extrabold">{m.location_header_01()}:</h2>
+			<span>
+			  {m.hours_location_01()}<br />
+			</span>
+			<br/>
+			<p class="w-full font-extrabold text-xl text-primary-500">{m.offerings_00()}!</p>
 		</section>
-
-		<section class="flex w-screen p-6 justify-center bg-success-500 text-white">
-			<Callout>
-				<img slot="image" src="assets/mavericks-logo.png" width="100%" alt="{m.mavericks_logo_alt()}" />
-				<p class="w-full font-extrabold text-xl" slot="title">{m.mavericks_title()}!</p>
-				<p class="w-full" slot="description">{m.mavericks_description()}</p>
-				<p class="w-full font-bold" slot="note">{m.mavericks_note()}</p>
-			</Callout>
-		</section>
+		  
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">{m.shopping_header()}:</h2>
 			<div class="flex p-6 rounded-lg justify-center bg-surface-500 text-white">
-				<ListBlock items={ Locations } type={ 'Locations' } />
+				<ListBlock items={Locations} type={'Locations'} />
 			</div>
 		</section>
 
 		<section class="w-[80%] max-w-[500px]">
-			<h2 class="pb-6 font-extrabold">{m.soups_header()}:</h2>
+			<h2 class="pb-6 font-extrabold">
+			  {m.soups_header_non_vegan_gluten()}:
+			</h2>
+		  
+			<div class="flex flex-col gap-6 p-6 rounded-lg justify-center bg-surface-500 text-white">
+			  <ListBlock items={Soups_Non_Vegan_Gluten} type={'Soups'} />
+		  
+			  <p class="w-full font-extrabold text-white">
+				{m.soups_header_vegan_gluten_free()}:
+			  </p>
+		  
+			  <ListBlock items={Soups_Vegan_Gluten_Free} type={'Soups'} />
+			</div>
+		</section>
+		  
+
+		<section class="w-[80%] max-w-[500px]">
+			<h2 class="pb-6 font-extrabold">{m.frozen_meals_header()}:</h2>
 			<div class="flex p-6 rounded-lg justify-center bg-surface-500 text-white">
-				<ListBlock items={ Soups } type={ 'Soups' } />
+				<ListBlock items={Frozen_Meals} type={'Soups'} />
 			</div>
 		</section>
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">{m.ingredients_header()}:</h2>
 			<div class="flex p-6 rounded-lg justify-center bg-primary-500 text-white">
-				<ListBlock items={ Ingredients } type={ 'Ingredients' } />
+				<ListBlock items={Ingredients} type={'Ingredients'} />
 			</div>
 		</section>
 
@@ -62,117 +165,19 @@
 			<p class="font-extrabold">info@perthsoup.ca</p>
 		</section>
 
-		{#each About as section, index }
-			<div class="w-[80%] max-w-[500px]">
-				<Accordion title={ section.title } paragraphs={section.text} />
-			</div>
-
-		{/each}
+		<section class="w-[80%] max-w-[500px]">
+			<Accordion title={About.title} paragraphs={About.text} />
+		</section>
 
 		<section>
 			<p class="font-heading font-semibold text-xl">"{m.closing_00()}"</p>
 			<p>{m.closing_01()}</p>
-			<p>- Kim -</p>
+			<p>- Chef Kim -</p>
 		</section>
- 
-		<footer class="pb-6">&copy; {m.copyright( { currentYear: year } )}</footer>
+
+		<footer class="pb-6">&copy; {m.copyright({ currentYear: year })}</footer>
 	</div>
 </div>
-
-<script lang="ts">
-	import ListBlock from "$lib/components/ListBlock.svelte";
-	import ListRow from "$lib/components/ListRow.svelte";
-	import IconRow from "$lib/components/IconRow.svelte";
-	import Accordion from "$lib/components/Accordion.svelte";
-	import Callout from "$lib/components/Callout.svelte";
-
-	import * as m from '$lib/paraglide/messages.js'
-
-	const year = String(new Date().getFullYear());
-
-	const Soups = [
-		{ name:m.soups_00()},
-		{ name:m.soups_01()},
-		{ name:m.soups_02()},
-		{ name:m.soups_03()},
-		{ name:m.soups_04()},
-		{ name:m.soups_05()},
-		{ name:m.soups_06()},
-		{ name:m.soups_07()},
-		{ name:m.soups_08()},
-		{ name:m.soups_09()},
-	]
-	const Locations = [
-    {  name: "Metro", city: "Perth" },
-    {  name: "Glenburnies", city: "Kingston" },
-    {  name: "Kudrinko's", city: "Westport" },
-    {  name: "B & H Community Grocer", city: "Kemptville" },
-    {  name: "Valley Custom Cutting", city: "Smiths Falls" },
-    {  name: "Rideau Ferry Store", city: "Rideau Ferry" },
-	]
-	const Ingredients = [
-		{ name: m.ingredients_00(), icon:"assets/ingredients/Ingredients_AllNatural.svg" },
-		{ name: m.ingredients_01(), icon:"assets/ingredients/Ingredients_NoGluten.svg" },
-		{ name: m.ingredients_02(), icon:"assets/ingredients/Ingredients_NoMSG.svg" },
-		{ name: m.ingredients_03(), icon:"assets/ingredients/Ingredients_NoGMO.svg" },
-		{ name: m.ingredients_04(), icon:"assets/ingredients/Ingredients_Vegan.svg" },
-		{ name: m.ingredients_05(), icon:"assets/ingredients/Ingredients_NoSoy.svg" },
-		{ name: m.ingredients_06(), icon:"assets/ingredients/Ingredients_NoNuts.svg" },
-	]
-	const FeaturedText = [
-		{ name:m.features_00()},
-		{ name: m.features_01()},
-		{ name: m.features_02()},
-		{ name: m.features_03()},
-		{ name: m.features_04()},
-	]
-	const FeaturedIcons = [
-		{ src:"assets/ontariomade.png", alt: m.features_04()},
-		{ src:"assets/ingredients/Ingredients_NoNuts.svg", alt: m.ingredients_06()},
-		{ src:"assets/ingredients/Ingredients_NoMSG.svg", alt: m.ingredients_02()},
-		{ src:"assets/ingredients/Ingredients_AllNatural.svg", alt: m.ingredients_00()}
-	]
-	const About = [
-    { 
-        title: m.about_section_00_title(),
-        text: [ 
-            m.about_section_00_p_01(),
-            m.about_section_00_p_02(),
-            m.about_section_00_p_03(),
-        ]
-    },
-    { 
-        title: m.about_section_01_title(),
-        text: [ 
-           m.about_section_01_p_01(),
-           m.about_section_01_p_02(),
-           m.about_section_01_p_03(),
-           m.about_section_01_p_04(),
-           m.about_section_01_p_05(),
-        ]
-    }
-		// { 
-		//     title: "about_section_02_title",
-		//     image: "",
-		//     text: [ 
-		//         "about_section_02_p_01",
-		//         "about_section_02_p_02",
-		//         "about_section_02_p_03",
-		//         "about_section_02_p_04",
-		//     ]
-		// },
-		// { 
-		//     title: "about_section_03_title",
-		//     text: [ 
-		//         "about_section_03_p_01",
-		//         "about_section_03_p_02",
-		//         "about_section_03_p_03",
-		//         "about_section_03_p_04",
-		//     ]
-		// },
-
-	]
-</script>
 
 <style lang="postcss">
 	.visually-hidden {
@@ -193,20 +198,20 @@
 	}
 	/* HTML: <div class="ribbon">Your text content</div> */
 	.ribbon {
-	--r: .5em; /* control the ribbon shape (the radius) */
+		--r: 0.5em; /* control the ribbon shape (the radius) */
 
-	position: relative;
-	bottom: 20px;
-	/* inset-inline: calc(-1*var(--r)); */
-	text-align: center;
-	line-height: 1.8; 
-	padding: calc(2*var(--r)) .5em 0;
-	border-radius: var(--r);
-	--_g:0/var(--r) calc(2*var(--r)) no-repeat;
-	background: 
-		radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
-		radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
-		conic-gradient(at var(--r) calc(2*var(--r)),#0000 25%, theme('colors.ribbon') 0)
-		0 0/calc(100% - var(--r)) 100%;
+		position: relative;
+		bottom: 20px;
+		/* inset-inline: calc(-1*var(--r)); */
+		text-align: center;
+		line-height: 1.8;
+		padding: calc(2 * var(--r)) 0.5em 0;
+		border-radius: var(--r);
+		--_g: 0 / var(--r) calc(2 * var(--r)) no-repeat;
+		background:
+			radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 var(--_g),
+			radial-gradient(100% 50% at left, #0005 98%, #0000 101%) 100% var(--_g),
+			conic-gradient(at var(--r) calc(2 * var(--r)), #0000 25%, theme('colors.ribbon') 0) 0 0 /
+				calc(100% - var(--r)) 100%;
 	}
 </style>
