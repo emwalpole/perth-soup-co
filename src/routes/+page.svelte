@@ -18,7 +18,8 @@
 		{ name: m.soups_vegan_gluten_free_05() },
 		{ name: m.soups_vegan_gluten_free_06() },
 		{ name: m.soups_vegan_gluten_free_07() },
-		{ name: m.soups_vegan_gluten_free_08() }
+		{ name: m.soups_vegan_gluten_free_08() },
+		{ name: m.soups_vegan_gluten_free_09() }
 	];
 
 	const Soups_Non_Vegan_Gluten = [
