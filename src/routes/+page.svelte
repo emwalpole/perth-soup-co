@@ -104,22 +104,23 @@
 				><IconRow icons={FeaturedIcons} /></span
 			>
 		</section>
-		<section class="space-y-2 w-[80%] max-w-[650px] border border-black rounded-lg bg-transparent p-4">
+		<section
+			class="space-y-2 w-[80%] max-w-[650px] border border-black rounded-lg bg-transparent p-4"
+		>
 			<p class="font-extrabold text-lg">{m.location()}</p>
-		  
+
 			<h2 class="font-extrabold">{m.location_header_00()}:</h2>
 			<span>
-			  {m.hours_location_00()}<br />
+				{m.hours_location_00()}<br />
 			</span>
-		  
+
 			<h2 class="font-extrabold">{m.location_header_01()}:</h2>
 			<span>
-			  {m.hours_location_01()}<br />
+				{m.hours_location_01()}<br />
 			</span>
-			<br/>
+			<br />
 			<p class="w-full font-extrabold text-xl text-primary-500">{m.offerings_00()}!</p>
 		</section>
-		  
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">{m.shopping_header()}:</h2>
@@ -130,20 +131,19 @@
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">
-			  {m.soups_header_non_vegan_gluten()}:
+				{m.soups_header_non_vegan_gluten()}:
 			</h2>
-		  
+
 			<div class="flex flex-col gap-6 p-6 rounded-lg justify-center bg-surface-500 text-white">
-			  <ListBlock items={Soups_Non_Vegan_Gluten} type={'Soups'} />
-		  
-			  <p class="w-full font-extrabold text-white">
-				{m.soups_header_vegan_gluten_free()}:
-			  </p>
-		  
-			  <ListBlock items={Soups_Vegan_Gluten_Free} type={'Soups'} />
+				<ListBlock items={Soups_Non_Vegan_Gluten} type={'Soups'} />
+
+				<p class="w-full font-extrabold text-white">
+					{m.soups_header_vegan_gluten_free()}:
+				</p>
+
+				<ListBlock items={Soups_Vegan_Gluten_Free} type={'Soups'} />
 			</div>
 		</section>
-		  
 
 		<section class="w-[80%] max-w-[500px]">
 			<h2 class="pb-6 font-extrabold">{m.frozen_meals_header()}:</h2>
@@ -156,6 +156,13 @@
 			<h2 class="pb-6 font-extrabold">{m.ingredients_header()}:</h2>
 			<div class="flex p-6 rounded-lg justify-center bg-primary-500 text-white">
 				<ListBlock items={Ingredients} type={'Ingredients'} />
+			</div>
+		</section>
+
+		<section class="w-[80%] max-w-[500px] border border-black rounded-lg bg-[#ffcb05]">
+			<h2 class="mt-3 font-extrabold">{m.buy_company_header()}</h2>
+			<div class="flex p-6 rounded-lg justify-center">
+				{m.buy_company()}
 			</div>
 		</section>
 
