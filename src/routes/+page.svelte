@@ -26,8 +26,7 @@
 		{ name: m.soups_non_vegan_gluten_00() },
 		{ name: m.soups_non_vegan_gluten_01() },
 		{ name: m.soups_non_vegan_gluten_02() },
-		{ name: m.soups_non_vegan_gluten_03() },
-		{ name: m.soups_non_vegan_gluten_04() }
+		{ name: m.soups_non_vegan_gluten_03() }
 	];
 
 	const Frozen_Meals = [
@@ -41,7 +40,10 @@
 		{ name: 'Glenburnies', city: 'Kingston' },
 		{ name: "Kudrinko's", city: 'Westport' },
 		{ name: 'B & H Community Grocer', city: 'Kemptville' },
-		{ name: 'Valley Custom Cutting', city: 'Smiths Falls' }
+		{ name: 'Valley Custom Cutting', city: 'Smiths Falls' },
+		{ name: 'Perth General Store', city: 'Perth' },
+		{ name: 'Coutt\'s Coffee Roastery & Cafe', city: 'Perth' },
+		
 	];
 	const Ingredients = [
 		{ name: m.ingredients_00(), icon: 'assets/ingredients/Ingredients_AllNatural.svg' },
@@ -167,9 +169,7 @@
 		</section>
 
 		<section class="w-[80%] max-w-[500px]">
-			<h2 class="pb-3 font-extrabold">{m.wholesale_header()}</h2>
-			<p>{m.wholesale_info()}</p>
-			<p class="font-heading pt-4 pb-2 font-extrabold text-[24px]">{m.wholesale_enquiries()}:</p>
+			<p class="font-heading pt-4 pb-2 font-extrabold text-[24px]">{m.enquiries()}:</p>
 			<p class="font-extrabold">info@perthsoup.ca</p>
 		</section>
 
