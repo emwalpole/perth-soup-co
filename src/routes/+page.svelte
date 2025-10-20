@@ -162,7 +162,7 @@
 		</section>
 
 		<section class="w-[80%] max-w-[500px] border border-black rounded-lg bg-[#ffcb05]">
-			<h2 class="mt-3 font-extrabold">{m.buy_company_header()}</h2>
+			<h2 class="mt-3 px-3 font-extrabold">{m.buy_company_header()}</h2>
 			<div class="flex p-6 rounded-lg justify-center">
 				{m.buy_company()}
 			</div>
