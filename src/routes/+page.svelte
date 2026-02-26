@@ -41,7 +41,6 @@
 		{ name: "Kudrinko's", city: 'Westport' },
 		{ name: 'B & H Community Grocer', city: 'Kemptville' },
 		{ name: 'Valley Custom Cutting', city: 'Smiths Falls' },
-		{ name: 'Perth General Store', city: 'Perth' },
 		{ name: 'Coutt\'s Coffee Roastery & Cafe', city: 'Perth' },
 		
 	];
@@ -115,12 +114,6 @@
 			<span>
 				{m.hours_location_00()}<br />
 			</span>
-
-			<h2 class="font-extrabold">{m.location_header_01()}:</h2>
-			<span>
-				{m.hours_location_01()}<br />
-			</span>
-			<br />
 			<p class="w-full font-extrabold text-xl text-primary-500">{m.offerings_00()}!</p>
 		</section>
 
