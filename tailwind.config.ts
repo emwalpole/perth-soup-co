@@ -15,6 +15,8 @@ export default {
 			},
 			colors: {
 				ribbon: '#ffcb05',
+				ontarioMadeBlue: '#0072BC',
+				ontarioMadeRed: '#E41F26',
 			}
 		},
 	},

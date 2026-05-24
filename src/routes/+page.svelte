@@ -3,8 +3,6 @@
 	import ListRow from '$lib/components/ListRow.svelte';
 	import IconRow from '$lib/components/IconRow.svelte';
 	import Accordion from '$lib/components/Accordion.svelte';
-	import Callout from '$lib/components/Callout.svelte';
-
 	import * as m from '$lib/paraglide/messages.js';
 
 	const year = String(new Date().getFullYear());
@@ -61,19 +59,21 @@
 		{ name: m.features_04() }
 	];
 	const FeaturedIcons = [
-		{ src: 'assets/ontariomade.png', alt: m.features_04() },
 		{ src: 'assets/ingredients/Ingredients_NoNuts.svg', alt: m.ingredients_06() },
 		{ src: 'assets/ingredients/Ingredients_NoMSG.svg', alt: m.ingredients_02() },
 		{ src: 'assets/ingredients/Ingredients_AllNatural.svg', alt: m.ingredients_00() }
+	];
+	const OntarioMadeIcon = [
+		{ src: 'assets/ontariomade.png', alt: m.features_04() }
 	];
 	const About = {
 		title: m.about_section_00_title(),
 		text: [m.about_section_00_p_01(), m.about_section_00_p_02(), m.about_section_00_p_03()]
 	};
+
 </script>
 
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
-
 <div class="container w-[80%] max-w-[500px] h-full mx-auto flex justify-center items-center">
 	<div class="space-y-8 text-center flex flex-col items-center">
 		<section class="w-screen pt-3 checkered">
@@ -105,6 +105,34 @@
 				><IconRow icons={FeaturedIcons} /></span
 			>
 		</section>
+		<section class="w-[80%] max-w-[500px]">
+			<div class="flex items-center justify-between gap-4 p-6 rounded-lg ontarioMadeBlue text-white">
+				
+				<!-- Left icon -->
+				<div class="flex justify-center w-[20%]">
+					<IconRow icons={OntarioMadeIcon} />
+				</div>
+
+				<!-- Center text -->
+				<div class="flex-1 text-center">
+					<h2 class="text-md font-extrabold">
+						<a
+							href="https://supportontariomade.ca/explore-products/perth-soup-companys-frozen-soups"
+							class="hover:underline"
+						>
+							{m.ontario_made()}
+						</a>
+					</h2>
+				</div>
+
+				<!-- Right icon -->
+				<div class="flex justify-center w-[20%]">
+					<IconRow icons={OntarioMadeIcon} />
+				</div>
+
+			</div>
+		</section>
+
 		<section
 			class="space-y-2 w-[80%] max-w-[650px] border border-black rounded-lg bg-transparent p-4"
 		>
@@ -197,7 +225,7 @@
 		background-repeat: repeat;
 		background-size: 350px 350px;
 	}
-	/* HTML: <div class="ribbon">Your text content</div> */
+
 	.ribbon {
 		--r: 0.5em; /* control the ribbon shape (the radius) */
 
@@ -215,4 +243,10 @@
 			conic-gradient(at var(--r) calc(2 * var(--r)), #0000 25%, theme('colors.ribbon') 0) 0 0 /
 				calc(100% - var(--r)) 100%;
 	}
+
+	.ontarioMadeBlue {
+		background: theme('colors.ontarioMadeBlue');
+		text-align: left;
+	}
+
 </style>
